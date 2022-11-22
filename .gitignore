@@ -1,0 +1,28 @@
+.vscode
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# dependencies
+node_modules
+
+# testing
+coverage
+
+# production
+build
+
+# Editors and IDEs
+.idea
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# misc
+.DS_Store
+.env
+npm-debug.log
+nginx
+.htaccess
+helper_scripts
+yarn-error.log
