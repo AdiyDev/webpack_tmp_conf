@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack serve",
-    "build-dev": "webpack",
-    "build-prod": "webpack --node-env=production",
+    "start": "set NODE_ENV=development&&webpack serve",
+    "build-dev": "set NODE_ENV=development&&webpack",
+    "build-prod": "set NODE_ENV=production&&webpack",
     "clear": "rd /s /q dist"
   },
   "keywords": [],
