@@ -6,3 +6,5 @@ will be later:
 4) editconfigs / with lint and prettier into scripts
 5) CI/CD
 6) testing pyramid (on ci/cd) 
+
+at a later time web3
