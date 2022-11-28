@@ -1,7 +1,13 @@
 {
-  "name": "webpackMinConf",
+  "name": "webpack_tmp_conf",
   "version": "1.0.0",
   "main": "index.js",
+  "scripts": {
+    "start": "webpack serve",
+    "build-dev": "webpack",
+    "build-prod": "webpack --node-env=production",
+    "clear": "rd /s /q dist"
+  },
   "author": "",
   "license": "MIT",
   "dependencies": {},
