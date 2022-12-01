@@ -26,3 +26,4 @@ nginx
 .htaccess
 helper_scripts
 yarn-error.log
+dist
