@@ -1,3 +1,4 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path')
 
 const mode = process.env.NODE_ENV || 'development'
@@ -16,5 +17,8 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     clean: true,
     filename: '[name].[contenthash].js'
-  }
+  },
+  plugins: [new HtmlWebpackPlugin({
+    template: path.resolve(__dirname, 'src', 'index.html' )
+  })],
 }
