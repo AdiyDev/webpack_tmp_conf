@@ -1,0 +1,14 @@
+/*  rezet и normalize кроссбраузерная вёрстка и не только
+normalize -   стабилизирует или нормализирует все браузерные дефолтные стили одинакого 
+rezet - сбрасывает все браузерные дефолтные стили в 0  */
+
+* {
+  margin: 0;
+  padding: 0;
+  background-color: aqua;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
