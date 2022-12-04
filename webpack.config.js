@@ -1,4 +1,5 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 const path = require('path')
 
@@ -19,19 +20,24 @@ module.exports = {
     clean: true,
     filename: '[name].[contenthash].js'
   },
-  plugins: [new HtmlWebpackPlugin({
-    template: path.resolve(__dirname, 'src', 'index.html' )
-  })],
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, 'src', 'index.html')
+    }),
+    new MiniCssExtractPlugin({
+      filename: '[name].[contenthash].css'
+    })
+  ],
   module: {
     rules: [
       {
-      test: /\.html$/i,
-      loader: "html-loader",
+        test: /\.html$/i,
+        loader: 'html-loader'
       },
       {
         test: /\.css$/i,
-        use: ["style-loader", "css-loader"],
-      },
-    ],
-   }
+        use: [devMode ? 'style-loader' : MiniCssExtractPlugin.loader, 'css-loader']
+      }
+    ]
+  }
 }
