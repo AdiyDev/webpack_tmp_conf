@@ -12,8 +12,14 @@
   "keywords": [],
   "author": "",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1"
+  },
   "devDependencies": {
+    "@babel/core": "^7.20.5",
+    "@babel/plugin-proposal-export-default-from": "^7.18.10",
+    "@babel/preset-env": "^7.20.2",
+    "babel-loader": "^9.1.0",
     "css-loader": "^6.7.2",
     "html-loader": "^4.2.0",
     "html-webpack-plugin": "^5.5.0",
