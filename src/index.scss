@@ -1,7 +1,8 @@
-/*  rezet и normalize кроссбраузерная вёрстка и не только
+/*  rezet и normalize кроссбраузерная вёрстка и т.д.
 normalize -   стабилизирует или нормализирует все браузерные дефолтные стили одинакого 
 rezet - сбрасывает все браузерные дефолтные стили в 0  */
 
 @import 'libs/normalize';
+@import 'styles/fonts';
 @import 'styles/var';
 @import 'styles/style';
