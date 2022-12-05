@@ -14,17 +14,17 @@ at a later time web3
 ## scripts
 
 ```shell
-yarn run start
+yarn start
 ```
 
 ```shell
-yarn run build-dev
+yarn build-dev
 ```
 
 ```shell
-yarn run build-prod
+yarn build-prod
 ```
 
 ```shell
-yarn run clear
+yarn clear
 ```
