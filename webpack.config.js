@@ -98,7 +98,7 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['@babel/preset-env'],
+            presets: ['@babel/preset-react', '@babel/preset-env'],
             plugins: ['@babel/plugin-proposal-export-default-from'],
             ignore: ['node_modules', 'build']
           }
