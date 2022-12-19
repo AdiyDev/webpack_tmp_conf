@@ -7,7 +7,9 @@
     "start": "set NODE_ENV=development&&webpack serve",
     "build-dev": "set NODE_ENV=development&&webpack",
     "build-prod": "set NODE_ENV=production&&webpack",
-    "clear": "rd /s /q dist"
+    "clear": "rd /s /q dist",
+    "test:e2e": "node ./scripts/e2e.test.js",
+    "test:unit": "node ./scripts/unit.test.js"
   },
   "keywords": [],
   "author": "",
